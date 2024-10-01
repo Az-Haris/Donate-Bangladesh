@@ -1,11 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Donate Bangladesh</title>
-</head>
-<body>
-    <h1>Donate Now</h1>
-</body>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Custom Style -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              primary: "#B4F461",
+            },
+          },
+        },
+      };
+    </script>
+
+    <!-- Custom Style -->
+    <style>
+      .font-lexend {
+        font-family: "Lexend", system-ui;
+      }
+    </style>
+  </head>
+  <body class="font-lexend">
+    <header class="sticky top-0 backdrop-blur-md">
+      <nav class="bg-[#f9f7f3] py-4">
+        <div class="navbar container mx-auto">
+          <div class="navbar-start">
+            <a class="btn bg-primary px-7 text-xl">Blog</a>
+          </div>
+          <div class="navbar-center flex items-center gap-3">
+            <img src="./assets/logo.png" alt="" />
+            <h4 class="text-xl font-bold">Donate Bangladesh</h4>
+          </div>
+          <div class="navbar-end flex items-center gap-3">
+            <img src="./assets/coin.png" alt="" />
+            <p class="font-bold">
+              <span id="available-balance">5500</span> BDT
+            </p>
+          </div>
+        </div>
+      </nav>
+      <div class="flex justify-center gap-4 mt-5 pb-5">
+        <button class="btn px-8 btn-outlined bg-primary">Donation</button>
+        <button class="btn px-8 btn-outline">History</button>
+      </div>
+    </header>
+    <main class="container mx-auto space-y-8">
+
+
+      <!-- Event 1 -->
+      <div class="flex gap-8 p-7 border rounded-xl">
+        <img src="./assets/noakhali.png" alt="" />
+        <div class="flex flex-col justify-between">
+          <div>
+            <button class="btn btn-sm flex items-center gap-1 inline">
+                <img class="w-[22px]" src="./assets/coin.png" alt="" /><span id="noakhali-donated-amount"
+                  >0</span
+                >
+                BDT
+              </button>
+          </div>
+          <h2 class="font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
+          <p class="text-[#111111]">The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
+          <form class="space-y-4">
+            <input class="input input-bordered w-full" type="text" placeholder="Write Donation Amount">
+            <button class="btn w-full bg-primary" type="submit">Donate Now</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Event 2 -->
+      <div class="flex gap-8 p-7 border rounded-xl">
+        <img src="./assets/feni.png" alt="" />
+        <div class="flex flex-col justify-between">
+          <div>
+            <button class="btn btn-sm flex items-center gap-1 inline">
+                <img class="w-[22px]" src="./assets/coin.png" alt="" /><span id="feni-donated-amount"
+                  >600</span
+                >
+                BDT
+              </button>
+          </div>
+          <h2 class="font-bold text-xl">Donate for Flood Relief in Feni,Bangladesh</h2>
+          <p class="text-[#111111]">The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.</p>
+          <form class="space-y-4">
+            <input class="input input-bordered w-full" type="text" placeholder="Write Donation Amount">
+            <button class="btn w-full bg-primary" type="submit">Donate Now</button>
+          </form>
+        </div>
+      </div>
+
+
+      <!-- Event 3 -->
+      <div class="flex gap-8 p-7 border rounded-xl">
+        <img src="./assets/quota-protest.png" alt="" />
+        <div class="flex flex-col justify-between">
+          <div>
+            <button class="btn btn-sm flex items-center gap-1 inline">
+                <img class="w-[22px]" src="./assets/coin.png" alt="" /><span id="quota-donated-amount"
+                  >2400</span
+                >
+                BDT
+              </button>
+          </div>
+          <h2 class="font-bold text-xl">Aid for Injured in the Quota Movement</h2>
+          <p class="text-[#111111]">The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.</p>
+          <form class="space-y-4">
+            <input class="input input-bordered w-full" type="text" placeholder="Write Donation Amount">
+            <button class="btn w-full bg-primary" type="submit">Donate Now</button>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
