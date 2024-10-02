@@ -167,5 +167,5 @@ document.getElementById("quota-donate-btn").addEventListener("click", function (
 
 // Page Switch
 document.getElementById("blog").addEventListener("click", function(){
-    window.location.href = "/blog.html"
+    window.location.href = "blog.html"
 })
