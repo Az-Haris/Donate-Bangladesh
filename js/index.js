@@ -51,3 +51,9 @@ document.getElementById("noakhali-donate-btn").addEventListener("click", functio
     document.getElementById("noakhali-donate-amount").value = '';
 })
 
+
+
+// Page Switch
+document.getElementById("blog").addEventListener("click", function(){
+    window.location.href = "../blog.html"
+})
