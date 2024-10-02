@@ -49,9 +49,9 @@
           <div class="navbar-start">
             <a id="blog" class="btn bg-primary px-7 text-xl">Blog</a>
           </div>
-          <div class="navbar-center flex items-center gap-3">
+          <div class="navbar-center flex flex-col md:flex-row items-center gap-3">
             <img src="./assets/logo.png" alt="" />
-            <h4 class="text-xl font-bold">Donate Bangladesh</h4>
+            <h4 class="text-md md:text-xl font-bold">Donate Bangladesh</h4>
           </div>
           <div class="navbar-end flex items-center gap-3">
             <img src="./assets/coin.png" alt="" />
@@ -72,7 +72,7 @@
       <!-- Event Section -->
       <section class="container mx-auto space-y-8" id="event-section">
         <!-- Event 1 -->
-        <div class="flex gap-8 p-7 border rounded-xl">
+        <div class="flex flex-col md:flex-row gap-8 p-7 border rounded-xl">
           <img src="./assets/noakhali.png" alt="" />
           <div class="flex flex-col justify-between">
             <div>
@@ -114,7 +114,7 @@
         </div>
 
         <!-- Event 2 -->
-        <div class="flex gap-8 p-7 border rounded-xl">
+        <div class="flex flex-col md:flex-row gap-8 p-7 border rounded-xl">
           <img src="./assets/feni.png" alt="" />
           <div class="flex flex-col justify-between">
             <div>
@@ -126,7 +126,7 @@
                 BDT
               </button>
             </div>
-            <h2 class="font-bold text-xl">
+            <h2 id="feni-flood-title" class="font-bold text-xl">
               Donate for Flood Relief in Feni,Bangladesh
             </h2>
             <p class="text-[#111111]">
@@ -141,11 +141,12 @@
             </p>
             <form class="space-y-4">
               <input
+                id="feni-donate-amount"
                 class="input input-bordered w-full"
                 type="text"
                 placeholder="Write Donation Amount"
               />
-              <button class="btn w-full bg-primary" type="submit">
+              <button id="feni-doante-btn" class="btn w-full bg-primary" type="submit">
                 Donate Now
               </button>
             </form>
@@ -153,7 +154,7 @@
         </div>
 
         <!-- Event 3 -->
-        <div class="flex gap-8 p-7 border rounded-xl">
+        <div class="flex flex-col md:flex-row gap-8 p-7 border rounded-xl">
           <img src="./assets/quota-protest.png" alt="" />
           <div class="flex flex-col justify-between">
             <div>
@@ -165,7 +166,7 @@
                 BDT
               </button>
             </div>
-            <h2 class="font-bold text-xl">
+            <h2 id="quota-title" class="font-bold text-xl">
               Aid for Injured in the Quota Movement
             </h2>
             <p class="text-[#111111]">
@@ -181,11 +182,12 @@
             </p>
             <form class="space-y-4">
               <input
+                id="quota-donate-amount"
                 class="input input-bordered w-full"
                 type="text"
                 placeholder="Write Donation Amount"
               />
-              <button class="btn w-full bg-primary" type="submit">
+              <button id="quota-donate-btn" class="btn w-full bg-primary" type="submit">
                 Donate Now
               </button>
             </form>
@@ -217,5 +219,6 @@
     <script src="./js/index.js"></script>
     <script src="./js/tab-switch.js"></script>
     <script src="./js/history.js"></script>
+    <script src="./js/utilities.js"></script>
   </body>
 </html>
