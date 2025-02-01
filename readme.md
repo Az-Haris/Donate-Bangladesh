@@ -5,7 +5,8 @@
 
 ## Live Link
 
-(https://az-haris.github.io/Donate-Bangladesh/)[https://az-haris.github.io/Donate-Bangladesh/]
+https://az-haris.github.io/Donate-Bangladesh/
+
 ## Key Rule
 
 - Do not ask about mark distribution in the group, as it will not be provided.
